@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.navbar a {
+    color: #f5efef;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #5478d3;
+}
+
+.navbar img {
+    height: 40px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.column:hover {
+  transform: scale(1.05); /* Add a scale transform on hover */
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  /* text-align: center; */
+  background-color: #474e5d;
+  color: white;
+  height: 350px;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+footer {
+    background-color: #333;
+    color: #f5efef;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 70px;
+}
+</style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="Index.html">
+            <img src="logo.png" alt="A15-Forensic Database Logo"> 
+        </a>
+        <a href="Index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="feedback.html">Feedback</a>
+        <!-- <a href="our_team.html">Our Team</a> -->
+    </div>
+
+<div class="about-section">
+    <p style="padding: 10px;"><b>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome to Forensic Database, your trusted source for forensic information and resources.With a dedicated team of experts and enthusiasts, we aim to foster knowledge exchange, offer valuable insights, and contribute to the advancement of forensic science. 
+      </p>
+      <p style="padding: 10px;">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our mission is to provide a comprehensive platform for forensic professionals, researchers, and enthusiasts to access, share, and collaborate on forensic investigations.
+      </p>
+      <p style="padding: 10px;">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Whether you're a seasoned forensic expert or just starting your journey, our platform offers a wealth of information and tools to support your work. At Forensic Database, we are committed to promoting excellence in the field of forensics and making a positive impact on solving real-world cases. Join us in our quest for truth and justice.
+      </p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <!-- <img src="/w3images/team1.jpg" alt="Jane" style="width:100%"> -->
+      <div class="container">
+        <h2>ABC</h2>
+        
+        <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p> -->
+        <p>abc@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="column">
+    <div class="card">
+      <!-- <img src="/w3images/team2.jpg" alt="Mike" style="width:100%"> -->
+      <div class="container">
+        <h2>LMN</h2>
+        
+        <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p> -->
+        <p>lmn@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <!-- <img src="/w3images/team3.jpg" alt="John" style="width:100%"> -->
+      <div class="container">
+        <h2>PQR</h2>
+    
+        <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p> -->
+        <p>pqr@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <!-- <img src="/w3images/team3.jpg" alt="John" style="width:100%"> -->
+      <div class="container">
+        <h2>XYZ</h2>
+    
+        <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p> -->
+        <p>xyz@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<footer>
+    <p>&copy; Forensic Database</p>
+    <p>Contact: team@coders.com</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Case</title>
+    
+    <link rel="stylesheet" href="AC.css">
+
+</head>
+<body>
+    <div class="navbar">
+        <a href="Index.html">
+            <img src="logo.png" alt="A15-Forensic Database Logo"> 
+        </a>
+        <a href="Index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="feedback.html">Feedback</a>
+        <!-- <a href="our_team.html">Our Team</a> -->
+    </div>
+
+    <form action="add_case.php" method="post">
+        <div class="container">
+            <br><br>
+            <h2>Add information about case</h2>
+            <br><br>
+             <div class="form-group">
+                <label for="id"> Case ID : </label>
+                <input type="number" id="ID" name="ID" placeholder="must be 3 digit number" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="title">Title :</label>
+                <input type="text" id="title" name="title" placeholder="Enter title of case" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="open">Date of case opening :</label>
+                <input type="date" id="open" name="open" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="status1">Status :
+                    <br><br>
+                    <input type="radio"  value="Ongoing" name="status" id="status1" >Ongoing
+                </label>
+                <label for="status2">
+                    <input type="radio"  value="Pending" name="status" id="status2">Pending
+                </label>
+                <label for="status3">
+                    <input type="radio"  value="Closed" name="status" id="status3">Closed
+                </label>
+            </div>
+            <br>
+            <label for="103"> Evidence collected :
+                <br><br>
+                <input type="checkbox" value="Fingerprint" name="evidence[]" id="103">Fingerprint
+            </label>
+            <label for="104">
+                <input type="checkbox" value="DNA profiling" name="evidence[]" id="104">DNA profiling
+            </label>
+            <label for="105">
+                <input type="checkbox" value="Circumstantial evidence" name="evidence[]" id="105">Circumstantial evidence
+            </label>
+            <label for="106">
+                <input type="checkbox" value="Trace evidence" name="evidence[]" id="106">Trace evidence
+            </label>
+            <label for="107">
+                <input type="checkbox" value="Analogical evidence" name="evidence[]" id="107">Analogical evidence
+            </label>
+            <br><br>
+            <textarea name="description" id="107" placeholder=" Write description about case here : " rows="5" cols="67"></textarea>
+            <br><br>
+            <div class="form-group">
+                <input type="submit" value="Submit"> 
+            </div>
+        
+            <div class="form-group">
+                <a href="techInfo.html" value="Back to Home" class="back-button">Back to technical team page</a>
+            </div>
+        </div>
+
+    </form>
+    
+    <footer>
+        <p>&copy; Forensic Database</p>
+        <p>Contact: team@coders.com</p>
+    </footer>
+    
+</body>
+</html>

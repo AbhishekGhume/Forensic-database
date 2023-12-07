@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title> Feedback </title>
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <style>
+        
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 6.25vmax;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    font-size: medium;
+}
+
+.navbar a {
+    color: #f5efef;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #5478d3;
+}
+
+.navbar img {
+    height: 40px;
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 60px;
+  }
+}
+
+.cd__main {
+  min-height: 100vh;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #222;
+  font-size: 0.24rem;
+  font-family: Arial, sans-serif;
+  background-size: 7rem 7rem, 6rem 6rem, auto;
+  background-position: 30% 10%, 80% 90%, 0;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(50px);
+}
+
+.wrapper {
+  width: 6rem;
+  padding: 0.3rem 0.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  border-radius: 0.25rem;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+}
+.wrapper .title {
+  font-weight: bold;
+  font-size: 0.36rem;
+}
+.wrapper .content {
+  line-height: 1.6;
+  color: #555;
+}
+textarea {
+  border: none;
+  resize: none;
+  width: 100%;
+  padding: 0.2rem;
+  color: inherit;
+  font-family: inherit;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+  box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.3), inset -2px -2px 8px rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+textarea::placeholder {
+  color: #aaa;
+}
+textarea:focus {
+  outline-color: #ffcc33;
+}
+
+.submit-btn {
+  padding: 0.2rem 0.5rem;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3), -3px -3px 8px rgba(255, 255, 255, 0.8);
+  border-radius: 1rem;
+  cursor: pointer;
+  background-color: rgba(255, 204, 51, 0.8);
+  transition: all 0.2s;
+}
+.submit-btn:active {
+  transform: translate(2px, 2px);
+}
+
+footer {
+    background-color: #333;
+    color: #f5efef;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 70px;
+    font-size:medium;
+}
+    </style>
+
+   </head>
+   <body>
+
+    <div class="navbar">
+        <a href="Index.html">
+            <img src="logo.png" alt="A15-Forensic Database Logo"> 
+        </a>
+        <a href="Index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="feedback.html">Feedback</a>
+        <!-- <a href="our_team.html">Our Team</a> -->
+    </div>
+      
+      <main class="cd__main">
+         <div class="wrapper"> 
+  <div class="title">Feedback</div>
+  <div class="content">We highly value your feedback! Kindly take a moment to rate your experience and provide us with your valuable feedback.</div>
+  
+  <textarea cols="30" rows="6" placeholder="Give your feedback!"></textarea>
+  <div class="submit-btn">Send</div>
+</div>
+      </main>
+      
+      <footer>
+        <p>&copy; Forensic Database</p>
+        <p>Contact: team@coders.com</p>
+    </footer>
+   </body>
+</html>
