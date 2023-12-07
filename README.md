@@ -17,7 +17,7 @@ Frontend:
 HTML, CSS
 
 Backend:
-PHP
+PHP, 
 MySQL
 
 Database Setup:
